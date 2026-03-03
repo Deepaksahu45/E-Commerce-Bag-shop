@@ -1,0 +1,12 @@
+usermodel :- 
+fullname - string
+email- string 
+password-string
+cart-array
+isadmin-boolean 
+order- array
+contact-number
+picture-db
+
+
+product:- 

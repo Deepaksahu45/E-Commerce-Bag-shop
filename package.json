@@ -1,0 +1,32 @@
+{
+  "name": "e-commerce-bag-shop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "cross-env NODE_ENV=development DEBUG=development:* nodemon app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "config": "^4.3.0",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.7",
+    "cross-env": "^10.1.0",
+    "debug": "^4.4.3",
+    "dotenv": "^17.3.1",
+    "ejs": "^4.0.1",
+    "export": "^0.1.337",
+    "express": "^5.2.1",
+    "express-session": "^1.19.0",
+    "flash": "^1.1.0",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.2.1",
+    "multer": "^2.0.2",
+    "nodemon": "^3.1.11",
+    "path": "^0.12.7"
+  }
+}
