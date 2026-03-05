@@ -1,21 +1,12 @@
 const mongoose = require("mongoose");
 const dbgr = require("debug")("development:db");
-const config = require("config");
-
-// mongoose
-//   .connect(`${config.get("MONGODB_URL")}/ecommerce`)
-//   .then(function () {
-//     dbgr("connected");
-//   })
-//   .catch(function (err) {
-//     dbgr(err);
-//   });
+require("dotenv").config();
 
 mongoose
-  .connect(`${config.get("MONGODB_URL")}/ecommerce`)
+  .connect(process.env.MONGO_URI)
   .then(() => {
-    console.log("MongoDB connected (console.log)");
-    dbgr("MongoDB connected (debug)");
+    console.log("MongoDB connected");
+    dbgr("MongoDB connected");
   })
   .catch((err) => console.log(err));
 
